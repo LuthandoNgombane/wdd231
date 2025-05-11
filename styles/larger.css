@@ -1,0 +1,42 @@
+/*LN : Larger screen styles */
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .header-content {
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .course-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .course-card {
+    flex: 1 1 30%;
+    text-align: center;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}

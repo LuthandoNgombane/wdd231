@@ -1,0 +1,146 @@
+/* LN: Small screen styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+#hamburger {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu li {
+  padding: 0.5rem 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.menu a:hover, .menu a.active {
+  background-color: #66bb6a;
+  border-radius: 4px;
+}
+
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #2e7d32;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.course-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.course-card {
+  padding: 0.5rem;
+  background-color: #dcedc8;
+  border-radius: 4px;
+}
+
+.course-card.completed {
+  background-color: #8bc34a;
+  color: white;
+}
+
+.filter-buttons {
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #66bb6a;
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

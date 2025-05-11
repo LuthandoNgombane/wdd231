@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course homepage for WDD 231, showcasing Luthando Ngombane's progress in Web and Computer Programming Certificate while studying with BYU-Idaho and working as a Full Stack Web Developer.">
+  <meta name="author" content="Luthando Ngombane">
+  <title>Luthando Ngombane - WDD 231 Course Homepage</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+
+  <!--LN : Header section with profile and navigation-->
+  <header>
+    <div class="header-content">
+      <img src="images/work-avatar.jpg" alt="Profile picture of Luthando Ngombane" class="profile-img">
+      <span class="name">Luthando Ngombane</span>
+    </div>
+    <nav id="nav-menu">
+      <button id="hamburger" aria-label="Toggle menu">☰</button>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li><a href="final.html">Final</a></li>
+        <li><a href="https://github.com/LuthandoNgombane">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/luthandongombane">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--LN : Main content section with course work, location, and personal information-->
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>Course Work</h2>
+      <ul>
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Mthatha, South Africa</h2>
+      <img src="images/mthatha.webp" alt="Bpicture of Mthatha, South Africa" class="content-img">
+      <p>The city of Mthatha</p>
+    </section>
+    <section>
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filter-buttons">
+        <button id="filter-all" class="filter-btn active">ALL</button>
+        <button id="filter-cse" class="filter-btn">CSE</button>
+        <button id="filter-wdd" class="filter-btn">WDD</button>
+      </div>
+      <div id="course-list" class="course-container"></div>
+      <p><span id="total-credits">Total Credits: 0</span></p>
+    </section>
+    <section>
+      <h2>About Me</h2>
+      <p>Born in Mthatha, South Africa, I am pursuing a degree with BYU-Idaho while working as a Full Stack Web Developer at 360 Administration and Systems, specializing in creating robust web solutions.</p>
+    </section>
+  </main>
+
+  <!--LN : Footer section with copyright and last update information-->
+  <footer>
+    <p>© <span id="currentyear"></span> Luthando Ngombane | South Africa</p>
+    <p id="lastModified"> </p>
+  </footer>
+</body>
+</html>
