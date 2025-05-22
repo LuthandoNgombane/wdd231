@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mthatha Chamber of Commerce Directory - Find local businesses and organizations.">
+    <meta name="author" content="Luthando Ngombane">
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Mthatha Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local businesses in Mthatha.">
+    <meta property="og:image" content="https://luthandogombane.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://luthandogombane.github.io/wdd231/chamber/directory.html">
+    <title>Mthatha Chamber of Commerce - Directory</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mthatha Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="directory-controls">
+            <h2>Directory View Options</h2>
+            <button id="grid-view" class="view-btn active" aria-label="Switch to grid view">Grid View</button>
+            <button id="list-view" class="view-btn" aria-label="Switch to list view">List View</button>
+        </section>
+        <section id="member-directory" class="grid-view">
+            <h2>Our Members</h2>
+            <!-- Members will be dynamically inserted here via JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <p>Contact: info@mthathachamber.org | (123) 456-7890</p>
+        <p>© <span id="current-year"></span> Mthatha Chamber of Commerce | Luthando Ngombane | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="https://app.moqups.com/IIRA7YxoAY7l3dNNey4ZzOTcOCnIZgqo/view/page/ad64222d5" rel="noopener" target="_blank">View Wireframe Mockup</a></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

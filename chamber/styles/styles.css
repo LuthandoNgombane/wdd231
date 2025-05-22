@@ -1,0 +1,131 @@
+/* LN -  Reset and Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* LN -  White */
+    color: #000000; /* LN -  Black */
+    margin: 0;
+    padding: 0;
+}
+
+/* LN -  Header and Navigation */
+header {
+    background-color: #008000; /* LN -  Green */
+    color: #FFFFFF; /* LN -  White */
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFB612; 
+    color: #000000; 
+}
+
+nav a.active {
+    background-color: #003087; 
+    color: #FFFFFF; 
+}
+
+/* LN -  Directory Controls */
+#directory-controls {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: #003087; 
+    color: #FFFFFF; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: #0056D2; 
+}
+
+.view-btn.active {
+    background-color: #FFB612; 
+    color: #000000; 
+}
+
+/* LN -  Member Directory - Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-card {
+    background-color: #FFFFFF; 
+    border: 1px solid #003087; 
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.member-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* LN -  Member Directory - List View */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-view .member-card {
+    text-align: left;
+}
+
+/* LN -  Footer */
+footer {
+    background-color: #008000; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* LN -  Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        padding: 0.75rem;
+    }
+}
