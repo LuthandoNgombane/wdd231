@@ -4,7 +4,6 @@
         "address": "123 Nelson Mandela Dr, Mthatha, Eastern Cape",
         "phone": "(047) 531-1234",
         "website": "https://mthathabakery.co.za",
-        "image": "bakery.jpg",
         "membershipLevel": 2,
         "description": "Freshly baked goods with local Xhosa-inspired flavors, perfect for daily treats."
     },
@@ -13,7 +12,6 @@
         "address": "6 Eli, Gerald Spilkin St, Savoy Park, Mthatha, Eastern Cape",
         "phone": "(047) 531-5678",
         "website": "https://dynamictechsolutions.co.za",
-        "image": "tech.jpg",
         "membershipLevel": 3,
         "description": "Innovative IT and web hosting services for Mthatha businesses."
     },
@@ -22,7 +20,6 @@
         "address": "51 Sutherland St, Mthatha, Eastern Cape",
         "phone": "(047) 531-9012",
         "website": "https://zibahart.co.za",
-        "image": "art.jpg",
         "membershipLevel": 1,
         "description": "Online art gallery and stationery shop catering to artists and students."
     },
@@ -31,7 +28,6 @@
         "address": "101 Circular Dr, Mthatha, Eastern Cape",
         "phone": "(047) 531-3456",
         "website": "https://bigjoespies.co.za",
-        "image": "pies.jpg",
         "membershipLevel": 2,
         "description": "Famous for meaty pastries and traditional South African comfort food."
     },
@@ -40,7 +36,6 @@
         "address": "202 Errol Spring Ave, Mthatha, Eastern Cape",
         "phone": "(047) 531-7890",
         "website": "https://eclandscaping.co.za",
-        "image": "landscaping.jpg",
         "membershipLevel": 1,
         "description": "Transforming Mthatha’s outdoor spaces with sustainable designs."
     },
@@ -49,7 +44,6 @@
         "address": "303 Madeira St, Mthatha, Eastern Cape",
         "phone": "(047) 531-2345",
         "website": "https://mthathafitness.co.za",
-        "image": "fitness.jpg",
         "membershipLevel": 3,
         "description": "Modern gym offering fitness programs for all levels."
     },
@@ -58,7 +52,6 @@
         "address": "404 Sprigg St, Mthatha, Eastern Cape",
         "phone": "(047) 531-6789",
         "website": "https://bratsguesthouse.co.za",
-        "image": "guesthouse.jpg",
         "membershipLevel": 2,
         "description": "Elegant accommodations with 49 rooms, perfect for visitors to Mthatha."
     }

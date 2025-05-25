@@ -75,7 +75,6 @@ function displayMembers(members, view)
         }
         
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" onerror="this.src='images/placeholder.jpg'">
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>

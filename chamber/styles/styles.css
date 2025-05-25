@@ -1,16 +1,16 @@
 /* LN -  Reset and Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF; /* LN -  White */
-    color: #000000; /* LN -  Black */
+    background-color: #FFFFFF; 
+    color: #000000; 
     margin: 0;
     padding: 0;
 }
 
 /* LN -  Header and Navigation */
 header {
-    background-color: #008000; /* LN -  Green */
-    color: #FFFFFF; /* LN -  White */
+    background-color: #008000; 
+    color: #FFFFFF; 
     text-align: center;
     padding: 1rem;
 }
