@@ -1,5 +1,6 @@
 [
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Mthatha Bakery",
         "address": "123 Nelson Mandela Dr, Mthatha, Eastern Cape",
         "phone": "(047) 531-1234",
@@ -8,6 +9,7 @@
         "description": "Freshly baked goods with local Xhosa-inspired flavors, perfect for daily treats."
     },
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Dynamic Tech Solutions",
         "address": "6 Eli, Gerald Spilkin St, Savoy Park, Mthatha, Eastern Cape",
         "phone": "(047) 531-5678",
@@ -16,6 +18,7 @@
         "description": "Innovative IT and web hosting services for Mthatha businesses."
     },
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Zibah Art & Literature",
         "address": "51 Sutherland St, Mthatha, Eastern Cape",
         "phone": "(047) 531-9012",
@@ -24,6 +27,7 @@
         "description": "Online art gallery and stationery shop catering to artists and students."
     },
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Big Joe's Real Pies",
         "address": "101 Circular Dr, Mthatha, Eastern Cape",
         "phone": "(047) 531-3456",
@@ -32,6 +36,7 @@
         "description": "Famous for meaty pastries and traditional South African comfort food."
     },
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Eastern Cape Landscaping",
         "address": "202 Errol Spring Ave, Mthatha, Eastern Cape",
         "phone": "(047) 531-7890",
@@ -40,6 +45,7 @@
         "description": "Transforming Mthatha’s outdoor spaces with sustainable designs."
     },
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Mthatha Fitness Studio",
         "address": "303 Madeira St, Mthatha, Eastern Cape",
         "phone": "(047) 531-2345",
@@ -48,6 +54,7 @@
         "description": "Modern gym offering fitness programs for all levels."
     },
     {
+        "image": "../images/logo-placeholder.jpg",
         "name": "Brats Guest House",
         "address": "404 Sprigg St, Mthatha, Eastern Cape",
         "phone": "(047) 531-6789",
