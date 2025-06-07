@@ -2,6 +2,49 @@
 document.getElementById('current-year').textContent = new Date().getFullYear();
 document.getElementById('last-modified').textContent = document.lastModified;
 
+//LN - Set timestamp
+document.getElementById('timestamp').value = new Date().toISOString();
+
+//LN - Membership card animation
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.membership-card');
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 200);
+    });
+
+    //LN - Modal functionality
+    const modals = document.querySelectorAll('.modal');
+    const modalButtons = document.querySelectorAll('.info-btn');
+    const closeButtons = document.querySelectorAll('.close-btn');
+
+    modalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'block';
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.closest('.modal').style.display = 'none';
+        });
+    });
+
+    window.addEventListener('click', (event) => {
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+});
+    
 // LN - Variable to store members data so we don’t fetch it multiple times
 let cachedMembers = null;
 

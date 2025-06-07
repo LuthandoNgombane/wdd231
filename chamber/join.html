@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mthatha Chamber of Commerce - Join</title>
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="footer.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mthatha Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="join">
+            <h2>Join Our Chamber</h2>
+            <div class="join-container">
+                <form method="get" action="thankyou.html" id="membership-form">
+                    <label for="first-name">First Name:
+                        <input type="text" id="first-name" name="first-name" title="Applicant's First Name" autocomplete="given-name" required>
+                    </label>
+                    <label for="last-name">Last Name:
+                        <input type="text" id="last-name" name="last-name" title="Applicant's Last Name" autocomplete="family-name" required>
+                    </label>
+                    <label for="org-title">Organizational Title:
+                        <input type="text" id="org-title" name="org-title" title="Your Title Within the Organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+                    </label>
+                    <label for="email">Email Address:
+                        <input type="email" id="email" name="email" title="Business Email Address" autocomplete="email" placeholder="example@business.com" required>
+                    </label>
+                    <label for="phone">Mobile Phone Number:
+                        <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                    </label>
+                    <label for="business-name">Business/Organization Name:
+                        <input type="text" id="business-name" name="business-name" title="Business or Organization Name" autocomplete="organization" required>
+                    </label>
+                    <label for="membership-level">Membership Level:
+                        <select id="membership-level" name="membership-level" title="Select Membership Level" required>
+                            <option value="" disabled selected>Select a Membership Level</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label for="business-desc">Business/Organization Description:
+                        <textarea id="business-desc" name="business-desc" title="Description of Your Business or Organization" rows="4"></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <input type="submit" value="Submit Application">
+                </form>
+
+                <div id="membership-cards">
+                    <div class="membership-card" data-membership="np">
+                        <h3>NP Membership</h3>
+                        <p>Free for non-profits</p>
+                        <button class="info-btn" data-modal="np-modal">Learn More</button>
+                    </div>
+                    <div class="membership-card" data-membership="bronze">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic membership benefits</p>
+                        <button class="info-btn" data-modal="bronze-modal">Learn More</button>
+                    </div>
+                    <div class="membership-card" data-membership="silver">
+                        <h3>Silver Membership</h3>
+                        <p>Enhanced benefits</p>
+                        <button class="info-btn" data-modal="silver-modal">Learn More</button>
+                    </div>
+                    <div class="membership-card" data-membership="gold">
+                        <h3>Gold Membership</h3>
+                        <p>Premium benefits</p>
+                        <button class="info-btn" data-modal="gold-modal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div id="np-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>NP Membership Benefits</h3>
+                    <ul>
+                        <li>Free membership for non-profit organizations</li>
+                        <li>Access to networking events</li>
+                        <li>Listing in the chamber directory</li>
+                        <li>Monthly newsletter subscription</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Bronze Membership Benefits</h3>
+                    <ul>
+                        <li>All NP Membership benefits</li>
+                        <li>Discounted event tickets</li>
+                        <li>Access to basic training sessions</li>
+                        <li>Business listing with logo</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="silver-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Silver Membership Benefits</h3>
+                    <ul>
+                        <li>All Bronze Membership benefits</li>
+                        <li>Priority event registration</li>
+                        <li>Featured listing in directory</li>
+                        <li>One spotlight feature per year</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gold-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Gold Membership Benefits</h3>
+                    <ul>
+                        <li>All Silver Membership benefits</li>
+                        <li>Exclusive access to premium events</li>
+                        <li>Two spotlight features per year</li>
+                        <li>Free advertising in newsletter</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:info@mthathachamber.org">info@mthathachamber.org</a> | (123) 456-7890</p>
+        <p>&copy; <span id="current-year"></span> Mthatha Chamber of Commerce | Luthando Ngombane | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="wireframe.html">View Wireframe Mockup</a></p>
+    </footer>
+</body>
+</html>
