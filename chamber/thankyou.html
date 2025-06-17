@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mthatha Chamber of Commerce - Thank You</title>
+    <title>Mthatha Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalise.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href=" anunciou: https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts/footer.js" type="module" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,45 +16,42 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="thankyou">
             <h2>Thank You for Your Application!</h2>
             <p>We have received your membership application and will review it shortly. Below is the information you submitted:</p>
             <div class="submission-details">
                 <h3>Application Details</h3>
-                <p><strong>First Name:</strong> <span id="display-first-name"></span></p>
-                <p><strong>Last Name:</strong> <span id="display-last-name"></span></p>
-                <p><strong>Email:</strong> <span id="display-email"></span></p>
-                <p><strong>Mobile Phone:</strong> <span id="display-phone"></span></p>
-                <p><strong>Business/Organization Name:</strong> <span id="display-business-name"></span></p>
-                <p><strong>Submission Date:</strong> <span id="display-timestamp"></span></p>
+                <p>First Name: <span id="display-fname"></span></p>
+                <p>Last Name: <span id="display-lname"></span></p>
+                <p>Email: <span id="display-email"></span></p>
+                <p>Mobile Phone: <span id="display-phone"></span></p>
+                <p>Business/Organization Name: <span id="display-orgname"></span></p>
+                <p>Submission Date: <span id="display-timestamp"></span></p>
             </div>
-            <p><a href="join.html" class="cta-button">Return to Join Page</a></p>
+            <a href="join.html" class="cta-button">Return to Join Page</a>
         </section>
     </main>
-
     <footer>
-        <p>Contact: <a href="mailto:info@mthathachamber.org">info@mthathachamber.org</a> | (123) 456-7890</p>
+        <p>Contact: <a href="mailto:[email protected]">[email protected]</a> | (123) 456-7890</p>
         <p>&copy; <span id="current-year"></span> Mthatha Chamber of Commerce | Luthando Ngombane | WDD 231</p>
         <p>Last Modified: <span id="last-modified"></span></p>
-        <p><a href="wireframe.html">View Wireframe Mockup</a></p>
+        <p><a href="https://app.moqups.com/IIRA7YxoAY7l3dNNey4ZzOTcOCnIZgqo/view/page/ad64222d5">View Wireframe Mockup</a></p>
     </footer>
-
+    <script src="scripts/scripts.js"></script>
     <script>
-        // Display form submission data
         document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
-            document.getElementById('display-first-name').textContent = params.get('first-name') || 'Not provided';
-            document.getElementById('display-last-name').textContent = params.get('last-name') || 'Not provided';
-            document.getElementById('display-email').textContent = params.get('email') || 'Not provided';
-            document.getElementById('display-phone').textContent = params.get('phone') || 'Not provided';
-            document.getElementById('display-business-name').textContent = params.get('business-name') || 'Not provided';
-            document.getElementById('display-timestamp').textContent = params.get('timestamp') ? new Date(params.get('timestamp')).toLocaleString() : 'Not provided';
+            document.getElementById('display-fname').textContent = params.get('fname') || '';
+            document.getElementById('display-lname').textContent = params.get('lname') || '';
+            document.getElementById('display-email').textContent = params.get('email') || '';
+            document.getElementById('display-phone').textContent = params.get('phone') || '';
+            document.getElementById('display-orgname').textContent = params.get('orgname') || '';
+            document.getElementById('display-timestamp').textContent = params.get('timestamp') || '';
         });
     </script>
 </body>

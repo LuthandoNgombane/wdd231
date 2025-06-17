@@ -2,10 +2,13 @@
 document.getElementById('current-year').textContent = new Date().getFullYear();
 document.getElementById('last-modified').textContent = document.lastModified;
 
-//LN - Set timestamp
-document.getElementById('timestamp').value = new Date().toISOString();
+// LN - Set timestamp if element exists
+const timestampElement = document.getElementById('timestamp');
+if (timestampElement) {
+    timestampElement.value = new Date().toISOString();
+}
 
-//LN - Membership card animation
+// LN - Membership card animation
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.membership-card');
     cards.forEach((card, index) => {
@@ -18,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, index * 200);
     });
 
-    //LN - Modal functionality
+    // LN - Modal functionality
     const modals = document.querySelectorAll('.modal');
     const modalButtons = document.querySelectorAll('.info-btn');
     const closeButtons = document.querySelectorAll('.close-btn');
@@ -44,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-    
+
 // LN - Variable to store members data so we don’t fetch it multiple times
 let cachedMembers = null;
 
@@ -52,22 +55,17 @@ let cachedMembers = null;
 async function fetchMembers(view) 
 {
     try {
-
-        //LN - If we haven’t fetched the members yet, get them from members.json
+        // LN - If we haven’t fetched the members yet, get them from members.json
         if (cachedMembers === null) 
         {   
-            
             const response = await fetch('data/members.json');
-            
             if (response.ok === false) 
             {   
                 throw new Error('Failed to fetch members.json');
             }
-
             cachedMembers = await response.json();
         }
-
-        //LN - Display the members using the cached data
+        // LN - Display the members using the cached data
         displayMembers(cachedMembers, view);
     } 
     catch (error) 
@@ -79,31 +77,24 @@ async function fetchMembers(view)
 
 function displayMembers(members, view) 
 {
-
     const directory = document.getElementById('member-directory');
-
-    //LN - If the directory element doesn’t exist, stop the function
+    // LN - If the directory element doesn’t exist, stop the function
     if (directory === null) 
     {
         return;
     }
-
-    //LN - Clear any existing content in the directory
+    // LN - Clear any existing content in the directory
     directory.innerHTML = '';
-
-    //LN - Set the class to either grid-view or list-view
+    // LN - Set the class to either grid-view or list-view
     directory.className = view + '-view';
-
-    //LN - Loop through each member and create a card
+    // LN - Loop through each member and create a card
     for (let i = 0; i < members.length; i++) 
     {
         const member = members[i];
         const card = document.createElement('div');
         card.className = 'member-card';
-    
-        //LN - Set the card’s content
+        // LN - Set the card’s content
         let membershipText;
-    
         if (member.membershipLevel === 1) 
         {
             membershipText = 'Member';
@@ -116,7 +107,6 @@ function displayMembers(members, view)
         {
             membershipText = 'Gold';
         }
-        
         card.innerHTML = `
             <img src="images/${member.image}" alt="Logo of ${member.name}" width="100" height="100" ">
             <h3>${member.name}</h3>
@@ -132,29 +122,19 @@ function displayMembers(members, view)
 
 // LN - Toggle View
 const gridViewButton = document.getElementById('grid-view');
-
 if (gridViewButton !== null) 
 {
     gridViewButton.addEventListener('click', function() 
     {
-    
         gridViewButton.classList.add('active');
-
         document.getElementById('list-view').classList.remove('active');
-
         fetchMembers('grid');
-
     });
-
     const listViewButton = document.getElementById('list-view');
-
     listViewButton.addEventListener('click', function() 
     {
-    
         listViewButton.classList.add('active');
-    
         gridViewButton.classList.remove('active');
-    
         fetchMembers('list');
     });
 }
