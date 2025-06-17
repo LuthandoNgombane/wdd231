@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mthatha Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
+     <style>
+        /* Critical CSS */
+        header {
+            background-color: #009900;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        h1 { font-size: 2em; font-weight: bold; margin: 0.5rem 0; }
+        h2 { font-size: 1.5em; font-weight: bold; margin: 0.5rem 0; text-align: center; }
+    </style>
+  
+</head>
+<body>
+    <header>
+        <h1>Mthatha Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="discover">
+            <h2>Discover Mthatha</h2>
+            <div id="discover-grid">
+                <div class="card" data-area="card1"></div>
+                <div class="card" data-area="card2"></div>
+                <div class="card" data-area="card3"></div>
+                <div class="card" data-area="card4"></div>
+                <div class="card" data-area="card5"></div>
+                <div class="card" data-area="card6"></div>
+                <div class="card" data-area="card7"></div>
+                <div class="card" data-area="card8"></div>
+            </div>
+            <aside id="visit-message"></aside>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: <a href="mailto:[email protected]">[email protected]</a> | (123) 456-7890</p>
+        <p>© <span id="current-year"></span> Mthatha Chamber of Commerce | Luthando Ngombane | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="#">View Wireframe Mockup</a></p>
+    </footer>
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Nelson Mandela Museum",
+        "address": "Nelson Mandela Drive, Mthatha, Eastern Cape",
+        "description": "Explore the life and legacy of Nelson Mandela with exhibits and artifacts.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Mthatha Town Hall",
+        "address": "Main Street, Mthatha, Eastern Cape",
+        "description": "A historic venue hosting community events and cultural performances.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Umtata River",
+        "address": "Along Umtata River, Mthatha, Eastern Cape",
+        "description": "A scenic river perfect for nature walks and photography.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Mthatha Market",
+        "address": "Central Market Square, Mthatha, Eastern Cape",
+        "description": "A bustling market offering local crafts, food, and goods.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Qunu Village",
+        "address": "Qunu, near Mthatha, Eastern Cape",
+        "description": "Birthplace of Nelson Mandela, rich in cultural heritage.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Mthatha Golf Course",
+        "address": "Golf Course Road, Mthatha, Eastern Cape",
+        "description": "A well-maintained course for golf enthusiasts and visitors.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Holy Cross Hospital",
+        "address": "Fort Gale Road, Mthatha, Eastern Cape",
+        "description": "A key healthcare facility serving the Mthatha community.",
+        "image": "../images/logo-placeholder.jpg"
+    },
+    {
+        "name": "Mthatha Nature Reserve",
+        "address": "Nature Reserve Area, Mthatha, Eastern Cape",
+        "description": "A haven for wildlife and outdoor activities.",
+        "image": "../images/logo-placeholder.jpg"
+    }
+]

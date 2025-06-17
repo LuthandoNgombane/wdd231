@@ -73,7 +73,7 @@ nav a:hover {
     color: #000000;
 }
 
-nav a.active personally: {
+nav a.active {
     background-color: #003087;
     color: #FFFFFF;
 }
@@ -280,11 +280,17 @@ nav a:focus, button:focus {
     min-height: 320px;
 }
 
+/* Footer Styles */
 footer {
     background-color: #009900;
     color: #FFFFFF;
     text-align: center;
     padding: 1rem;
+    min-height: 4rem; /* Reserve space for dynamic content */
+}
+
+footer p {
+    margin: 0.25rem 0;
 }
 
 @media (max-width: 600px) {
@@ -463,5 +469,139 @@ footer {
 
     #membership-cards {
         grid-template-columns: 1fr;
+    }
+}
+
+
+/* Discover Page Styles */
+  #discover {
+      margin: 1rem auto;
+      max-width: 1200px;
+      padding: 1rem;
+  }
+
+  #discover-grid {
+      display: grid;
+      gap: 1rem;
+      padding: 1rem;
+  }
+
+  .card {
+      background-color: #FFFFFF;
+      border: 1px solid #003087;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      min-height: 400px; 
+  }
+
+  .card h2 {
+      font-size: 1.5em;
+      margin: 0.5rem 0;
+  }
+
+  .card figure {
+      margin: 0.5rem 0;
+      min-height: 200px; 
+  }
+
+  .card img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+  }
+
+  .card address {
+      font-style: normal;
+      margin: 0.5rem 0;
+  }
+
+  .card p {
+      margin: 0.5rem 0;
+  }
+
+  .card .learn-more {
+      padding: 0.5rem 1rem;
+      background-color: #FFA500;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  #visit-message {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      text-align: center;
+      min-height: 2rem;
+  }
+
+
+/*LN - Grid Layout with Named Areas */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    #discover-grid {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+    .card[data-area="card1"] { grid-area: card1; }
+    .card[data-area="card2"] { grid-area: card2; }
+    .card[data-area="card3"] { grid-area: card3; }
+    .card[data-area="card4"] { grid-area: card4; }
+    .card[data-area="card5"] { grid-area: card5; }
+    .card[data-area="card6"] { grid-area: card6; }
+    .card[data-area="card7"] { grid-area: card7; }
+    .card[data-area="card8"] { grid-area: card8; }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    #discover-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+    .card[data-area="card1"] { grid-area: card1; }
+    .card[data-area="card2"] { grid-area: card2; }
+    .card[data-area="card3"] { grid-area: card3; }
+    .card[data-area="card4"] { grid-area: card4; }
+    .card[data-area="card5"] { grid-area: card5; }
+    .card[data-area="card6"] { grid-area: card6; }
+    .card[data-area="card7"] { grid-area: card7; }
+    .card[data-area="card8"] { grid-area: card8; }
+}
+
+@media screen and (min-width: 1025px) {
+    #discover-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+    .card[data-area="card1"] { grid-area: card1; }
+    .card[data-area="card2"] { grid-area: card2; }
+    .card[data-area="card3"] { grid-area: card3; }
+    .card[data-area="card4"] { grid-area: card4; }
+    .card[data-area="card5"] { grid-area: card5; }
+    .card[data-area="card6"] { grid-area: card6; }
+    .card[data-area="card7"] { grid-area: card7; }
+    .card[data-area="card8"] { grid-area: card8; }
+}
+
+/* LN - Hover Effect on Images for Medium/Large Screens */
+@media screen and (min-width: 641px) {
+    .card img:hover {
+        filter: brightness(80%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
     }
 }
