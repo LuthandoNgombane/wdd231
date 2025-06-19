@@ -1,4 +1,4 @@
-import { loadEvents, displayEvents, handleJoinForm } from '../modules/club.js';
+import { loadEvents, displayEvents, handleJoinForm } from './club.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');

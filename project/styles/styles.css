@@ -199,7 +199,6 @@ footer a:hover {
 img {
   max-width: 100%;
   height: auto;
-  loading: lazy;
 }
 
 @media (max-width: 767px) {
