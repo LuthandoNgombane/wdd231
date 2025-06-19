@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Spring Sprint 5K",
+    "date": "2025-07-15",
+    "location": "City Park",
+    "description": "A fun 5K run for all levels, with post-race refreshments."
+  },
+  {
+    "name": "Autumn Trail Run",
+    "date": "2025-10-20",
+    "location": "River Path",
+    "description": "A scenic 10K trail run through fall foliage."
+  },
+  {
+    "name": "Summer Dash 3K",
+    "date": "2025-12-05",
+    "location": "Central Park",
+    "description": "A quick 3K dash under the summer sun."
+  },
+  {
+    "name": "Winter Jog 8K",
+    "date": "2026-01-15",
+    "location": "Lynnwood Trail",
+    "description": "An 8K jog to warm up in winter."
+  },
+  {
+    "name": "Spring Marathon Prep",
+    "date": "2025-08-10",
+    "location": "Pretoria North",
+    "description": "Training run for the upcoming marathon."
+  },
+  {
+    "name": "Autumn Fun Run",
+    "date": "2025-11-15",
+    "location": "River Path",
+    "description": "A casual 5K fun run for all ages."
+  },
+  {
+    "name": "Summer Night Run",
+    "date": "2025-12-20",
+    "location": "City Park",
+    "description": "A 6K run under the evening stars."
+  },
+  {
+    "name": "Winter Trail Challenge",
+    "date": "2026-02-05",
+    "location": "Lynnwood Trail",
+    "description": "A challenging 10K trail event."
+  },
+  {
+    "name": "Spring Relay Race",
+    "date": "2025-09-01",
+    "location": "Central Park",
+    "description": "Team relay race for all levels."
+  },
+  {
+    "name": "Autumn Half Marathon",
+    "date": "2025-11-30",
+    "location": "River Path",
+    "description": "A 21K half marathon event."
+  },
+  {
+    "name": "Summer Sprint Series",
+    "date": "2025-12-15",
+    "location": "Pretoria North",
+    "description": "A series of 5K sprints."
+  },
+  {
+    "name": "Winter Wellness Run",
+    "date": "2026-01-25",
+    "location": "City Park",
+    "description": "A 7K run for health and wellness."
+  },
+  {
+    "name": "Spring Charity Run",
+    "date": "2025-08-25",
+    "location": "Lynnwood Trail",
+    "description": "A 5K run to support local charities."
+  },
+  {
+    "name": "Autumn Cross Country",
+    "date": "2025-10-10",
+    "location": "Central Park",
+    "description": "A 10K cross-country challenge."
+  },
+  {
+    "name": "Summer Family Fun Run",
+    "date": "2025-12-30",
+    "location": "River Path",
+    "description": "A family-friendly 3K fun run."
+  }
+]
